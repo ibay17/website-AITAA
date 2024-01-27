@@ -1,0 +1,209 @@
+:root {
+    --header-height: 3.5rem;
+    --nav-width: 219px;
+    /*========== Colors ==========*/
+    --side-background-color: brown;
+    --first-color:#e8f1c5;
+    --second-color: brown;
+    --primarycolor: brown;
+    --secondarycolor: white;
+    --title-color: #19181B;
+    --text-color: #ffffff;
+    --text-color-light: #ffffff;
+    --body-color: #ffffffe5;
+    --container-color: brown;
+    /*========== Font and typography ==========*/
+    /* --body-font: 'Poppins', sans-serif;
+    --normal-font-size: .938rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .75rem; */
+    /*========== Font weight ==========*/
+    /* --font-medium: 500;
+    --font-semi-bold: 600; */
+    /*========== z index ==========*/
+    /* --z-fixed: 100; */
+}
+
+
+/* dashboard */
+
+#preloader {
+	background: #ffffff url(../img/Circles.gif) no-repeat center center;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	z-index: 10000;
+}
+
+
+a {
+    text-decoration: none;
+    color: black !important;
+}
+p{
+    margin: 0px !important;
+}
+.form-control{
+    height: 60px;
+}
+
+.card-dashboard {
+    border-radius: 15px;
+}
+
+.card-dashboard h4,
+h1 {
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.card-dashboard h1 {
+    margin-left: 15px;
+}
+
+.container {
+    margin-top: 10px !important;
+}
+
+.submid-btn {
+    width: 50%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: var(--secondarycolor);
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    border: 0;
+    outline: none;
+    border-radius: 30px !important;
+}
+
+.chartbar {
+    background-color: var(--container-color);
+    border-radius: 15px;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.btn-dashboard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.button {
+    font-size: 0.95rem;
+    padding: 10px 15px 10px 15px;
+    border-radius: 7px;
+    border: none;
+    font-weight: 500;
+    background-color: var(--second-color);
+}
+
+.button-table {
+    font-size: 0.95rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+    border: none;
+    font-weight: 500;
+    background-color: var(--second-color);
+}
+
+.btn-submit {
+    margin: 5px;
+}
+
+.form-input {
+    background-color: var(--container-color);
+    border-radius: 15px;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+
+/* product */
+
+.tableProduct {
+    background-color: var(--container-color);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.table {
+    border: #19181B;
+}
+
+canvas {
+    max-height: 300px;
+    align-items: center;
+}
+
+.row {
+    margin-top: 15px;
+}
+
+.chosen-container-single .chosen-single {
+	height: 45px;
+	line-height: 40px;
+    width: auto;
+}
+
+.chosen-single span {
+	font-size: 1rem;
+}
+
+
+@media screen and (max-width: 480px) {
+    .form-control-sm {
+        width: 125px !important;
+    }
+    .chartbar {
+        margin-bottom: 10px;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 480px) {
+    .iconMin {
+        display: none;
+    }
+    .title {
+        justify-content: start;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 991px) {
+	.my_select_box {
+		width: 100%;
+		height: 35px;
+		border-radius: 3px;
+	}
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
